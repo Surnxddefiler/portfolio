@@ -33,7 +33,7 @@ body {
     color: white;
     font-size: 1.3rem;
 }
-.header__nav a:link {
+a:link {
     color: white;
 }
 .header__nav a {
