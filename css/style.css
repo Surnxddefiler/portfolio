@@ -33,7 +33,9 @@ body {
     color: white;
     font-size: 1.3rem;
 }
-
+.header__nav a:link {
+    color: white;
+}
 .header__nav a {
     margin-left: 30px;
     text-decoration: none;
