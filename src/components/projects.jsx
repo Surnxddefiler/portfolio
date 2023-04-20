@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from 'react';
+import React, { forwardRef} from 'react';
 import '../index.css'
 import { container, item, projects } from '../info';
 import { motion } from 'framer-motion';

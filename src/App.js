@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/header';
 import { Intro } from './components/intro';
 import { Projects } from './components/projects';
 import { Technologies } from './components/technologies';
-import { About } from './components/about';
 import { Experience } from './components/experience';
 import { Contact } from './components/form';
 import { Additional } from './components/additional';

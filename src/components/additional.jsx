@@ -1,6 +1,6 @@
 import '../index.css'
 import { motion } from 'framer-motion'
-import { add, container, item } from '../info'
+import { add, container} from '../info'
 export const Additional=()=>{
     return(
         <motion.section
