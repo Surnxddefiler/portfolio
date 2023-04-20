@@ -10,9 +10,9 @@ export const Intro = () => {
             <div className="relative">
                 <div className="absolute z-10 lg:left-52  top-52 text-2xl" >
                     <div className="text-3xl flick">
-                    WARNING!! this site is still under construction
+                    WARNING!! this potfolio is still under construction
                     </div>
-                    <div className="flick mt-10">front-end developer</div>
+                    <div className="flick mt-10">Hi, my name is Oleksii, front-end developer</div>
                 </div>
                 <div className="absolute block h-screen z-10  w-screen lg:hidden"></div>
             </div>
