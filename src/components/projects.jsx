@@ -26,11 +26,11 @@ export const Projects = () => {
                 variants={container}
                 viewport={{ amount: 0.2, once: true}}
                 className='container'>
-                <h1 className='text-center text-3xl'>My Projects</h1>
+                <h2 className='text-center text-3xl'>My Projects</h2>
                 <div className=' mt-16 pb-16 flex flex-wrap gap-32 justify-around'>
-                    {projects.map((obj) => {
+                    {projects.map((obj, i) => {
                         return (
-                            <MProject variants={item} tech={obj.tech} project={obj.project} link={obj.link} title={obj.title} img={obj.img} description={obj.description} />
+                            <MProject key={i} variants={item} tech={obj.tech} project={obj.project} link={obj.link} title={obj.title} img={obj.img} description={obj.description} />
                         )
                     })}
                 </div>
@@ -42,14 +42,14 @@ const Project = forwardRef(({ title, img, description, link, project, tech }, re
     return (
         <Tilt options={defaultOptions} >
         <div ref={ref} className='relative flex max-w-lg flex-col bg-primary rounded-3xl'>
-            <div><a href={project}><img className='rounded-t-3xl w-full h-64' src={`${img}`} alt="" /></a></div>
+            <div><a href={project}><img className='rounded-t-3xl w-full h-64 object-cover' src={`${img}`} alt="" /></a></div>
             <div>
-            <a href={project}><h1 className='text-center text-2.5xl'>{title}</h1></a>
+            <a href={project}><h3 className='text-center text-2.5xl'>{title}</h3></a>
                 <div className='break-words p-7 text-xl' >{description}</div>
             </div>
-            <a href={link}><i class=" z-10 fa-brands fa-github fa-2xl text-white absolute right-2 top-5"></i></a>
-            <div className='flex justify-center flex-wrap gap-4 mb-6'>
-            {tech.map((obj)=>{return <Type name={obj}/> })}
+            <a href={link}><i className=" z-10 fa-brands fa-github fa-2xl text-white absolute right-2 top-5"></i></a>
+            <div className='flex justify-center flex-wrap gap-4 mb-6 px-4'>
+            {tech.map((obj, i)=>{return <Type key={i} name={obj}/> })}
             </div>
         </div>
         </Tilt>

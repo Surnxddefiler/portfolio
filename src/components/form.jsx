@@ -35,7 +35,7 @@ export const Contact = () => {
         whileInView='visible'
         viewport={{amount: 0.2, once: true}} 
         className="bg-secondary mb-20 mt-20">
-            <motion.h1 variants={item} className="text-center text-3xl">Contact Me</motion.h1>
+            <motion.h2 variants={item} className="text-center text-3xl">Contact Me</motion.h2>
             <div className="stars"></div>
             <motion.div variants={item} className="container flex justify-center" >
                 <form className='w-full flex justify-between mt-20 h-96 flex-col max-w-lg bg-form p-10' ref={form} onSubmit={sendEmail}>

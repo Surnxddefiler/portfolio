@@ -6,11 +6,11 @@ export const Experience = () => {
     return (
         <section id='experience' className='mt-20'>
             <div className='container relative'>
-                <h1 className='text-center text-3xl'>Experience</h1>
+                <h2 className='text-center text-3xl'>Experience</h2>
                 <VerticalTimeline>
-                    {jobs.map((obj)=>{
+                    {jobs.map((obj, i)=>{
                         return(
-                            <Job title={obj.title} place={obj.place} description={obj.description} time={obj.time}/>
+                            <Job key={i} title={obj.title} place={obj.place} description={obj.description} time={obj.time}/>
                         )
                     })}
                 </VerticalTimeline>

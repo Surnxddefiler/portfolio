@@ -30,7 +30,8 @@ export const item = {
 };
 export const about='i am bobik snusik bobsikanigajfklsjflksdjflksdjflksdjflksdjflkdsjflksdjflsdkfjsldkfj boblyandiya'
 export const jobs=[
-    {title: 'learning', place: '-', description:'learning all the basics', time: '2021-now'},
+    {title: 'learning', place: '-', description:'learning all the basics', time: '2021-2023'},
+    {title: 'WLA', place: 'White Label Agency', description:'Working as a wordpress developer', time: '2023-now'},
 ]
 export const add=[
     {id:1, skill: 'B2+ english level'},

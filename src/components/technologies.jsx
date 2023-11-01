@@ -13,11 +13,11 @@ export const Technologies=()=>{
             variants={container}
             viewport={{amount: 0.2, once: true}} 
             className="container">
-                <h1 className="text-center text-3xl">Technologies</h1>
+                <h2 className="text-center text-3xl">Technologies</h2>
                 <div className='mt-12 flex flex-col justify-center'>
-                    {technologies.map((obj)=>{
+                    {technologies.map((obj, i)=>{
                         return(
-                            <MTechnologie variants={item} knowledge={obj.knowledge} title={obj.title}/>
+                            <MTechnologie key={i} variants={item} knowledge={obj.knowledge} title={obj.title}/>
                         )
                     })}
                 </div>

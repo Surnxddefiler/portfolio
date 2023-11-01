@@ -11,10 +11,10 @@ export const Additional=()=>{
         className='mt-20'
         >
             <div className="container">
-                <h1 className='text-center text-3xl'>Additional skills</h1>
+                <h2 className='text-center text-3xl'>Additional skills</h2>
                 <div className='mt-20 flex flex-wrap gap-32 justify-around text-center' >
-                    {add.map((obj)=>{
-                        return <Add id={obj.id} skill={obj.skill}/>
+                    {add.map((obj, i)=>{
+                        return <Add key={i} id={obj.id} skill={obj.skill}/>
                     })}
                 </div>
             </div>
