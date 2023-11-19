@@ -41,5 +41,4 @@ export const add=[
     {id:5, skill: 'redux'},
     {id:6, skill: 'three.js'},
     {id:7, skill: 'tailwindcss'},
-    {id: 8, skill: 'zabivka hookah'}
 ]
